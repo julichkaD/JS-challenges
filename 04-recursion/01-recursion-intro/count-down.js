@@ -1,13 +1,11 @@
 function countDown(num) {
-  //base case
-  if ((num <= 0)) {
-    console.log("All done!");
-    return;
-  }
-  //   Recursive case
-  console.log(num);
-  num--;
-  countDown(num);
+   if(num <= 0) {
+    return num;
+   }
+   console.log(num);
+   num--;
+   countDown(num);
+
 }
 
 module.exports = countDown;
